@@ -1,2 +1,2 @@
 # MineDash
-Pequeno projeto em SpringBoot no desenvolvimento de um REST para controle de inventário no minecraft
+Pequeno projeto em SpringBoot no desenvolvimento de um serviço RESTful para controle de inventário no minecraft
