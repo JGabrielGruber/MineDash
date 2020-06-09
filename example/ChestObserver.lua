@@ -76,7 +76,7 @@ function sendUpdate(displayname, amount)
     if (spc ~= nill and spc > 0) then
         name = name:sub(0,spc-1)
     end
-    local handle = internet.request("http://127.0.0.1:8080/ores/" .. name .. "/qtd", {amount=amount}, {}, "POST")
+    local handle = internet.request("http://127.0.0.1:8080/categories/Ores/resources/" .. name .. "/qtd", {amount=amount}, {}, "POST")
 end
 
 -- sendUpdate("Iron Ore", 10)
