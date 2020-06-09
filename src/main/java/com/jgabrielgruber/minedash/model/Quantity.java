@@ -21,8 +21,8 @@ public class Quantity {
 	private long id;
 
 	@ManyToOne
-	@JoinColumn(name = "ore_id")
-	private Ore ore;
+	@JoinColumn(name = "resource_id")
+	private Resource resource;
 
 	@Column(name = "amount")
 	private int amount;
@@ -32,8 +32,8 @@ public class Quantity {
 	public Quantity() {
 	}
 
-	public Quantity(Ore ore, int amount) {
-		this.ore = ore;
+	public Quantity(Resource resource, int amount) {
+		this.resource = resource;
 		this.amount = amount;
 	}
 
@@ -50,12 +50,12 @@ public class Quantity {
 		this.id = id;
 	}
 
-	public Ore getOre() {
-		return ore;
+	public Resource getResource() {
+		return resource;
 	}
 
-	public void setOre(Ore ore) {
-		this.ore = ore;
+	public void setResource(Resource resource) {
+		this.resource = resource;
 	}
 
 	public int getAmount() {

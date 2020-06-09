@@ -7,9 +7,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import com.jgabrielgruber.minedash.model.Quantity;
 
 public interface QuantityRepository extends JpaRepository<Quantity, Long> {
-	List<Quantity> findByOreId(long oreId);
+	List<Quantity> findByResourceId(long resourceId);
 
-	List<Quantity> findByOreTitle(String oreTitle);
+	List<Quantity> findByResourceTitleOrderByTimestamp(String resourceTitle);
 
-	Quantity findOneByOreTitle(String oreTitle);
+	Quantity findOneByResourceTitle(String resourceTitle);
 }
